@@ -1,7 +1,7 @@
 h1 {
     color: #FB8F67;
     /* background-color: #156064; */
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
 }
 
@@ -25,4 +25,5 @@ body {
     height: 50px;
     width: 100%;
     padding: 5%;
+    text-align: center;
 }
