@@ -21,7 +21,12 @@ body {
 }
 
 button {
-    padding: 2%
+    background-color: #d8e2dc;
+    color: #FB8F67;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 1%;
 }
 
 .banner {
