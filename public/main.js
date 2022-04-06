@@ -7,4 +7,4 @@ const presentAlert = () => {
     return
 }
 
-button.addEventListener('button', click(presentAlert))
+button.addEventListener('button', presentAlert)
