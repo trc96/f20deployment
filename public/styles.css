@@ -1,6 +1,6 @@
 h1 {
     color: #FB8F67;
-    background-color: #156064;
+    /* background-color: #156064; */
     text-align: center;
     margin: 0;
 }
@@ -14,4 +14,11 @@ h1 {
 
 body {
     background-color: #d8e2dc;
+}
+
+.banner {
+    background-color: #156064;
+    height: 50px;
+    width: 100%;
+    padding: 5%;
 }
