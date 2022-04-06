@@ -2,19 +2,19 @@ h1 {
     color: #FB8F67;
     /* background-color: #156064; */
     /* text-align: center; */
-    margin: 0;
+    margin: 2%;
 }
 
 img {
     padding-top: 10px;
 }
 
-.center {
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
+} */
 
 body {
     background-color: #d8e2dc;
