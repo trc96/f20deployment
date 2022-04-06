@@ -7,4 +7,4 @@ const presentAlert = () => {
     return
 }
 
-div.addEventListener('submit', presentAlert)
+div.addEventListener('button', presentAlert)
