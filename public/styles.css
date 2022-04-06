@@ -33,6 +33,6 @@ button {
     background-color: #156064;
     height: 50px;
     width: 100%;
-    padding: 5%;
+    /* padding: 5%; */
     text-align: center;
 }
