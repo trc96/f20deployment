@@ -1,7 +1,10 @@
 console.log('JS Connected')
 
+const button = document.querySelector('button')
+
 const presentAlert = () => {
     alert(`I said I'm working on it...what did you expect to happen?`)
+    return
 }
 
-document.querySelector('button').addEventListener('button', presentAlert)
+button.addEventListener('button', click(presentAlert))
