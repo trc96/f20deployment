@@ -20,6 +20,10 @@ body {
     background-color: #d8e2dc;
 }
 
+button {
+    padding: 2%
+}
+
 .banner {
     background-color: #156064;
     height: 50px;
