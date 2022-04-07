@@ -30,6 +30,8 @@ app.get('/api/function', (req, res) => {
     } catch (err) {
         console.log(err)
         rollbar.error(`${err} triggered because get request tries to get somethingNonExistent`)
+        rollbar.warning(`${err} occured because the function doesn't exist, put somethign real there next time`)
+        rollbar.critical(`${err} somethingNonExistent doesn't come from anything, update the funtion and try again`)
     }
 })
 
