@@ -18,13 +18,14 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log("Hello world!");
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
-    rollbar.log('Someone requested the home page of the website')
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../index.html'))
+//     rollbar.log('Someone requested the home page of the website')
+// })
 
 app.get('/', (req, res) => {
     try {
+        res.sendFile(path.join(__dirname, '../index.html'))
         somethingNonExistend()
     } catch (err) {
         console.log(err)
