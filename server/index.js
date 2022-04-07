@@ -23,30 +23,30 @@ rollbar.log("Hello world!");
 //     rollbar.log('Someone requested the home page of the website')
 // })
 
-app.get('/', (req, res) => {
+app.get('/api/break', (req, res) => {
     try {
         res.sendFile(path.join(__dirname, '../index.html'))
-        somethingNonExistend()
+        somethingNonExistent1()
     } catch (err) {
         console.log(err)
         rollbar.error(`${err} triggered because get request tries to get somethingNonExistent`)
     }
 })
 
-app.get('/', (req, res) => {
+app.get('/api/please', (req, res) => {
     try {
         res.sendFile(path.join(__dirname, '../index.html'))
-        somethingNonExistend()
+        somethingNonExistent2()
     } catch (err){
         console.log(err)
         rollbar.warning(`${err} occured because the function doesn't exist, put somethign real there next time`)
     }
 })
 
-app.get('/', (req, res) => {
+app.get('/api/ineedthistowork', (req, res) => {
     try {
         res.sendFile(path.join(__dirname, '../index.html'))
-        somethingNonExistend()
+        somethingNonExistent3()
     } catch (err){
         console.log(err)
         rollbar.critical(`${err} somethingNonExistent doesn't come from anything, update the funtion and try again`)

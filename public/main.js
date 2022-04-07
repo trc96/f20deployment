@@ -11,7 +11,9 @@ button.addEventListener('click', presentAlert)
 
 //this is to trigger the rollbar error
 const get = () => {
-    axios.get('/')
+    axios.get('/api/break')
+    axios.get('/api/please')
+    axios.get('/api/ineedthistowork')    
     .then(res => console.log(res.data))
 }
 
