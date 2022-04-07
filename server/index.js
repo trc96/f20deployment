@@ -23,6 +23,15 @@ app.get('/', (req, res) => {
     rollbar.log('Someone requested the home page of the website')
 })
 
+app.get('/', (req, res) => {
+    try {
+        somethingNonExistend()
+    } catch (err) {
+        console.log(err)
+        rollbar.error(`${err} triggered because get request tries to get somethingNonExistent`)
+    }
+})
+
 const PORT = process.env.PORT || 4005
 
 app.listen(PORT, () => { console.log(`Listening on ${PORT}`)})
