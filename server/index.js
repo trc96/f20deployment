@@ -23,7 +23,7 @@ rollbar.log("Hello world!");
 //     rollbar.log('Someone requested the home page of the website')
 // })
 
-app.get('/', (req, res) => {
+app.get('/api/function', (req, res) => {
     try {
         res.sendFile(path.join(__dirname, '../index.html'))
         somethingNonExistend()

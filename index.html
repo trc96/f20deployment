@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- the line above works for heroku deployment -->
+    <link rel="stylesheet" href="public/styles.css">
     <title>Deployment Lab</title>
 </head>
 <body>
@@ -13,6 +15,9 @@
         <button>Click Here!</button>
     </div>
     <img src="https://media1.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif?cid=ecf05e473qrtcrritn01etjh5268jwlkz6wyrz8yzb4gh3b0&rid=giphy.gif&ct=g" alt="a cat typing on a keyboard" class="center">
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <!-- the line above works for heroku deployment -->
+    <script src="public/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
