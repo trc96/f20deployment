@@ -30,7 +30,25 @@ app.get('/api/function', (req, res) => {
     } catch (err) {
         console.log(err)
         rollbar.error(`${err} triggered because get request tries to get somethingNonExistent`)
+    }
+})
+
+app.get('/api/function', (req, res) => {
+    try {
+        res.sendFile(path.join(__dirname, '../index.html'))
+        somethingNonExistend()
+    } catch (err){
+        console.log(err)
         rollbar.warning(`${err} occured because the function doesn't exist, put somethign real there next time`)
+    }
+})
+
+app.get('/api/function', (req, res) => {
+    try {
+        res.sendFile(path.join(__dirname, '../index.html'))
+        somethingNonExistend()
+    } catch (err){
+        console.log(err)
         rollbar.critical(`${err} somethingNonExistent doesn't come from anything, update the funtion and try again`)
     }
 })
